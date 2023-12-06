@@ -19,11 +19,16 @@ public class Ejemplo03 {
         entrada.useLocale(Locale.US);
 
         String cadena = "";
+        int num;
 
-        for (int i = 1; i < 5; i++) {
+        System.out.println("Ingrese la cantidad de jugadores");
+        num = entrada.nextInt();
+        entrada.nextLine();
+
+        for (int i = 1; i <= num; i++) {
             String nombre;
             String posicion;
-
+            
             double estatura;
             int edad;
 
