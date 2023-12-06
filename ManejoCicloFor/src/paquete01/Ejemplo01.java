@@ -15,15 +15,18 @@ public class Ejemplo01 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        /*El codigo sirve para acumular la variable i y presentar en pantalala */
 
+        String cadena = "";
         for (int i = 1; i <= 10; i++) {
-            System.out.printf("%d\n", i);
-        }
-        
-        for (int i = 1; i < 11; i++) {
-            System.out.printf("%d\n", i);
+
+            cadena = String.format("%s %d", cadena, i);
         }
 
+        for (int i = 1; i < 11; i++) {
+            cadena = String.format("%s %d", cadena, i);
+        }
+        System.out.printf("%s ", cadena);
     }
 
 }

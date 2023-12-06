@@ -9,18 +9,22 @@ package paquete01;
  *
  * @author reroes
  */
-public class Ejemplo04 {
+public class Ejemplo014 {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // el i esta decreciendo 2 hasta que i llegue a 0
-        for (int i = 20; i >= 0; i-=2) {
-            
-            System.out.printf("%d\n", i);
+        /*El codigo sirve para acumular la variable i y presentar */
+
+        int cadena = 0;
+        for (int i = 1; i <= 10; i++) {
+            cadena = cadena + i;
         }
-      
+
+        for (int i = 1; i < 11; i++) {
+            cadena = cadena + i;
+        }
+        System.out.printf("%s ", cadena);
     }
-    
 }
