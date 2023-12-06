@@ -17,6 +17,7 @@ public class Ejemplo07 {
             // System.out.printf("Tabla de multiplicar del número %d\n", i);
             mensajeFinal = String.format("%sTabla de multiplicar del número %d\n", 
                     mensajeFinal, i);
+            //
             for (int contador = 1; contador <= 12; contador++) {
                 operacion = i * contador;
                 mensajeFinal = String.format("%s%d x %d = %d\n"
@@ -28,8 +29,7 @@ public class Ejemplo07 {
             }
              mensajeFinal = String.format("%s\n",mensajeFinal);
             // System.out.println("\n");
-        } // termina for 01
-        
+        } // termina for 01   
         System.out.printf("%s\n", mensajeFinal );
     }
 }
